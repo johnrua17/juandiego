@@ -1,0 +1,182 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,500;1,900&display=swap');
+
+* {
+    font-family: 'Poppins', cursive;
+}
+
+body {
+    color: azure;
+    width: 100%;
+    height: 82vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: black;
+    /* padding-top: -30; */
+}
+
+.botones {
+    padding: 9px;
+    border-radius: 80px;
+    background-color: transparent;
+    border: none;
+}
+.baudio{
+    padding: 9px;
+    border-radius: 80px;
+    background-color: transparent;
+    border: none;
+    
+}
+
+.baudio .au{
+    background-color: #9932CC;
+    padding: 9px;
+    border-radius: 80px;
+    -webkit-border-radius: 80px;
+    -moz-border-radius: 80px;
+    -ms-border-radius: 80px;
+    -o-border-radius: 80px;
+    text-decoration: none;
+    font-size: 1rem;
+    color: #111;
+}
+
+
+
+
+.botones a {
+    background-color: #9932CC;
+    padding: 9px;
+    border-radius: 80px;
+    -webkit-border-radius: 80px;
+    -moz-border-radius: 80px;
+    -ms-border-radius: 80px;
+    -o-border-radius: 80px;
+
+}
+
+.botones a:focus {
+    background-color: rgb(50, 194, 194);
+}
+
+.greetings {
+    font-size: 7rem;
+    font-weight: 900;
+}
+
+.greetings > span {
+    animation: glow 2.5s ease-in-out infinite;
+}
+
+@keyframes glow {
+    0%, 100% {
+        color: #fff;
+        text-shadow: 0 0 12px #800080, 0 0 50px #800080, 0 0 100px #800080;
+    }
+    10%, 90% {
+        color: #111;
+        text-shadow: none;
+    }
+}
+
+.greetings > span:nth-child(2) {
+    animation-delay: .2s;
+}
+
+.greetings > span:nth-child(3) {
+    animation-delay: .4s;
+}
+
+.greetings > span:nth-child(4) {
+    animation-delay: .6s;
+}
+
+.greetings > span:nth-child(5) {
+    animation-delay: .8s;
+}
+
+.greetings > span:nth-child(6) {
+    animation-delay: 1s;
+}
+
+.description {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+}
+
+.button a {
+    text-decoration: none;
+    font-size: 1rem;
+    color: #111;
+}
+
+/* Media Queries */
+
+@media screen and (max-width: 574px) {
+    .greetings {
+        display: block;
+        font-size: 4rem;
+        font-weight: 800;
+        text-align: center;
+    }
+    .description {
+        font-size: 2rem;
+    }
+    .button a {
+        font-size: 1rem;
+    }
+}
+
+@media screen and (min-width: 575px) and (max-width: 768px) {
+    .greetings {
+        font-size: 5rem;
+        text-align: center;
+    }
+    .description {
+        font-size: 1.8rem;
+    }
+    .button a {
+        font-size: 1.1rem;
+    }
+}
+
+@media screen and (min-width: 769px) and (max-width: 992px) {
+    .greetings {
+        font-size: 6rem;
+        text-align: center;
+    }
+    .description {
+        font-size: 1.6rem;
+    }
+    .button a {
+        font-size: 1.2rem;
+    }
+}
+
+@media screen and (min-width: 993px) and (max-width: 1200px) {
+    .greetings {
+        font-size: 6.5rem;
+        text-align: center;
+    }
+    .description {
+        font-size: 1.4rem;
+    }
+    .button a {
+        font-size: 1.3rem;
+    }
+}
+
+@media screen and (min-width: 1201px) {
+    .greetings {
+        font-size: 7rem;
+        text-align: center;
+    }
+    .description {
+        font-size: 1.5rem;
+    }
+    .button a {
+        font-size: 1.4rem;
+    }
+}
