@@ -24,30 +24,43 @@
         <span>I</span>
         <span>N</span>
         <span>E</span>
+        
+
     </div>
-    
     <div class="description">
         <span>Sunshine, Pensabas que no te daria tus flores JAJAJAJ? 💖😊</span>
+        
     </div>
     
-    <div class="baudio">
-        <audio id="myaudio" src="sound/Hola prima Luisa soy Ge 2.mp3"></audio>
-        <button class="au" onclick="playAudioAndRedirect()" style="color: #fff;">TOQUE AQUI SUNSHINE SIN MIEDO</button>
+<div class="baudio">
+    <audio id="myaudio" src="sound/Hola prima Luisa soy Ge 2.mp3"></audio>
+<button class="au" onclick="playAudio()" style="color: #fff;">TOQUE AQUI SUNSHINE SIN MIEDO</button>
+
+ <script>
+            var audio = document.getElementById("myaudio");
+
+            function playAudio(){
+                audio.play();
+            }
+        </script>
+
+</div>
+
+    <div class="button">
+        
+        <button class="botones" >
+            <a href="flores.html" style="color: #fff;">¡Click aqui sunshine para ver la sorpresa!</a>
+            
+        </button>
+
+       
     </div>
 
-    <script>
-        var audio = document.getElementById("myaudio");
-
-        function playAudioAndRedirect() {
-            audio.play();
-            audio.onended = function() {
-                window.location.href = "/Purple Flower for my Sunshine/flores.html";
-            };
-        }
-    </script>
-
+    
+     <!-- QUEDASTE EN AGREGARLE UNA VOZ O MUSICA A LA PAGINA -->
     <div class="credits">
         <p>&copy; Me encantas Luisa Maria Rodriguez 💖.</p>
     </div>
 </body>
 </html>
+
